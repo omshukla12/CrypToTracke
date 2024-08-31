@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const uri =
-  "mongodb+srv://omshukla:omshukla123@cluster0.2hott.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+  "mongodb+srv://omshukla:1234@cluster0.2hott.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 mongoose;
 
 function dbConnection() {
