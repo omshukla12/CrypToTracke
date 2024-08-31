@@ -1,4 +1,4 @@
-#CrypToTracker
+# CrypToTracker
 
 Welcome to CrypToTracker – your go-to website for real-time cryptocurrency tracking! With CrypToTracker, you can stay updated with the latest prices, trends, and market data for your favorite cryptocurrencies.
 
