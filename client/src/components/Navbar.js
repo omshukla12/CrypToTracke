@@ -55,7 +55,7 @@ function Navbar(props) {
               </Link>
               <Link to={"/signin"}>
                 <button className="bg-blue-400 text-white px-4 py-2 rounded-lg shadow-lg">
-                  Sign In
+                  Sign Up
                 </button>{" "}
               </Link>
             </>
