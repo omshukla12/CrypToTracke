@@ -23,8 +23,8 @@ const Login = () => {
 
     console.log(process.env.LOCAL_API);
 
-    const url = `${process.env.REACT_APP_LOCAL_API}login`;
-    // const url = "http://localhost:3001/api/v1/login";
+    // const url = `${process.env.REACT_APP_LOCAL_API}login`;
+    const url = "http://localhost:5000/api/v1/login";
 
     const data = await fetch(url, {
       method: "POST",

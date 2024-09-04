@@ -9,10 +9,6 @@ const PORT = process.env.PORT || 3000;
 app.use(Express.json());
 app.use(cors());
 
-app.get("/test/", (req, res) => {
-  res.json({"message": "Hello friend."});
-});
-
 app.use("/api/v1", require("./router/routes"));
 
 app.listen(PORT, () => {
