@@ -4,6 +4,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setuser } from "../store/userSlice";
+
 const Login = () => {
   const [formData, setformData] = useState({
     email: "",
@@ -20,7 +21,11 @@ const Login = () => {
   async function handleSubmission(event) {
     event.preventDefault();
 
-    const url = "http://localhost:3001/api/v1/login";
+    console.log(process.env.LOCAL_API);
+
+    const url = `${process.env.REACT_APP_LOCAL_API}login`;
+    // const url = "http://localhost:3001/api/v1/login";
+
     const data = await fetch(url, {
       method: "POST",
       headers: {

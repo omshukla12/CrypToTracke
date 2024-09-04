@@ -33,7 +33,7 @@ function Navbar(props) {
               <p className="cursor-pointer hover:text-blue-600">Trending</p>
             </Link>
             <Link to={"/watchlist"}>
-              <p className="cursor-pointer hover:text-blue-600">watchlist</p>
+              <p className="cursor-pointer hover:text-blue-600">Watchlist</p>
             </Link>
           </navitems>
         )}
@@ -50,12 +50,12 @@ function Navbar(props) {
             <>
               <Link to={"/login"}>
                 <button className="bg-blue-400 text-white px-4 py-2 rounded-lg shadow-lg">
-                  Login
+                  Log In
                 </button>
               </Link>
               <Link to={"/signin"}>
                 <button className="bg-blue-400 text-white px-4 py-2 rounded-lg shadow-lg">
-                  Signin
+                  Sign In
                 </button>{" "}
               </Link>
             </>

@@ -13,8 +13,9 @@ const Top10 = () => {
     if (user === "") {
       navigate("/");
     } else {
-      const url =
-        "https://api.coingecko.com/api/v3/search/trending/?precision=3";
+
+      const url = `${process.env.REACT_APP_COINGECKO_API}search/trending/?precision=3`;
+      // const url = "https://api.coingecko.com/api/v3/search/trending/?precision=3";
 
       fetch(url).then((response) =>
         response.json().then((data) => setData(data))

@@ -3,11 +3,10 @@ import { useParams } from "react-router-dom";
 
 const CoinByID = () => {
   const { id } = useParams();
-
   const [data, setData] = useState({});
 
   useEffect(() => {
-    fetch(`https://api.coingecko.com/api/v3/coins/${id}`)
+    fetch(`${process.env.REACT_APP_COINGECKO_API}coins/${id}`)
       .then((response) => response.json())
       .then((response) => setData(response))
       .catch((err) => console.error(err));

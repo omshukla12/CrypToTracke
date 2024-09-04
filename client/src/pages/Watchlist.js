@@ -8,7 +8,7 @@ const Watchlist = () => {
   console.log(watchlistdata);
 
   return watchlistdata.length === 0 ? (
-    <div>No data in watchlist</div>
+    <div className="p-10 w-full text-center font-semibold">No data in watchlist.</div>
   ) : (
     <div>
       <Cards data={watchlistdata} />
