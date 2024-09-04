@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 app.use(Express.json());
 app.use(cors());
 
-app.get("/", (req, res) => {
+app.get("/test/", (req, res) => {
   res.json({"message": "Hello friend."});
 });
 
