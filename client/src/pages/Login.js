@@ -21,8 +21,6 @@ const Login = () => {
   async function handleSubmission(event) {
     event.preventDefault();
 
-    console.log(process.env.LOCAL_API);
-
     const url = `${process.env.REACT_APP_LOCAL_API}login`;
 
     const data = await fetch(url, {
